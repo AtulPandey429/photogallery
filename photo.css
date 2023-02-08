@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
+*{
+    background: rgba(70, 91, 87, 0.684);
+    margin: 0;
+    padding: 0;
+}
+nav {
+    /** spaces */
+    color: antiquewhite;
+    width: 30%;
+    margin-left: calc(9%/6);
+    margin-bottom: 0.5rem;
+    padding: 1.5rem 0;
+
+    letter-spacing: 0.4rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+
+    /** HR */
+    border-bottom: 2px solid gray;
+}
+
+ img{
+    width:30%;
+    margin:calc(9%/6);
+    height: 30rem;
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+
+    /** transition: element name, time, functions */
+    transition: filter 1.5s ease, transform 1s ease;
+
+}
+img:hover {
+    -webkit-filter: grayscale(0);
+    filter: none;
+
+     /* transition: transform 0s ease; */
+    /** transform */
+    transform: scale(1.1);
+    animation-name: fadeInOut, moveLeft300px, bounce;
+   
+}
+
